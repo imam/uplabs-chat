@@ -1,15 +1,160 @@
 html {
   height: 100%;
 }
-.contacts {
-  width: 22%;
+body {
+  height: 100%;
+}
+.sticky__top {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.left-bar {
+  width: calc(99.9% * 3/12);
   height: 100%;
   background-color: #353b7d;
-  position: absolute;
+}
+.left-bar:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.left-bar:last-child {
+  margin-right: 0;
+}
+.left-bar:nth-child(0n) {
+  float: right;
+}
+.contacts {
+  padding-top: 60px;
 }
 .contacts__top {
   height: 60px;
-  box-shadow: #000 -2px 2px 4px 0px;
+  -webkit-box-shadow: #000 -2px 2px 4px 0px;
+          box-shadow: #000 -2px 2px 4px 0px;
+  z-index: 10;
+  width: calc(99.9% * 3/12);
+  background-color: #353b7d;
+}
+.contacts__top:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.contacts__top:last-child {
+  margin-right: 0;
+}
+.contacts__top:nth-child(0n) {
+  float: right;
+}
+.contacts-chat-room {
+  padding: 15px 0;
+  height: 60px;
+  position: relative;
+  color: #636791;
+}
+.contacts-chat-room--active {
+  background-color: #292f66;
+}
+.contacts-chat-room__title {
+  color: #fff;
+  position: absolute;
+  top: 23px;
+}
+.contacts-chat-room__time {
+  position: absolute;
+  top: 23px;
+  right: 37px;
+}
+.contacts-chat-room__excerpt {
+  position: absolute;
+  top: 47px;
+}
+.contacts-chat-room__profile-pictures {
+  width: calc(99.9% * 5/20 - (30px - 30px * 5/20));
+  height: 60px;
+}
+.contacts-chat-room__profile-pictures:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.contacts-chat-room__profile-pictures:last-child {
+  margin-right: 0;
+}
+.contacts-chat-room__profile-pictures:nth-child(20n) {
+  margin-right: 0;
+  float: right;
+}
+.contacts-chat-room__profile-pictures:nth-child(20n + 1) {
+  clear: both;
+}
+.contacts-chat-room__profile-pictures-single {
+  width: 45px;
+  height: 45px;
+  background-color: #00f;
+  border-radius: 40px;
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  background-image: url("https://avatars2.githubusercontent.com/u/8213031?s=460&v=4");
+  background-size: cover;
+}
+.contacts-chat-room__profile-pictures-single--multiple-first {
+  background-color: #ffc0cb;
+  top: 20px;
+  left: 23px;
+  z-index: 3;
+  background-image: url("https://avatars0.githubusercontent.com/u/32596568?s=200&v=4");
+}
+.contacts-chat-room__profile-pictures-single--multiple-second {
+  top: 27px;
+  left: 37px;
+}
+.contacts-chat-room__meta {
+  width: calc(99.9% * 15/20 - (30px - 30px * 15/20));
+}
+.contacts-chat-room__meta:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.contacts-chat-room__meta:last-child {
+  margin-right: 0;
+}
+.contacts-chat-room__meta:nth-child(20n) {
+  margin-right: 0;
+  float: right;
+}
+.contacts-chat-room__meta:nth-child(20n + 1) {
+  clear: both;
+}
+.chat {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  padding-left: 20%;
+}
+.chat__top {
+  height: 60px;
+  -webkit-box-shadow: #b5c0c6 0px 2px 4px 0px;
+          box-shadow: #b5c0c6 0px 2px 4px 0px;
+  width: calc(99.9% * 9/12 - (30px - 30px * 9/12));
+}
+.chat__top:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.chat__top:last-child {
+  margin-right: 0;
+}
+.chat__top:nth-child(12n) {
+  margin-right: 0;
+  float: right;
+}
+.chat__top:nth-child(12n + 1) {
+  clear: both;
 }
 .contacts-search {
   text-align: center;
@@ -29,6 +174,15 @@ html {
 .contacts-search__input::-webkit-input-placeholder {
   color: #b5c0c6;
 }
+.contacts-search__input:-ms-input-placeholder {
+  color: #b5c0c6;
+}
+.contacts-search__input::-ms-input-placeholder {
+  color: #b5c0c6;
+}
+.contacts-search__input::placeholder {
+  color: #b5c0c6;
+}
 .contacts-search__box {
   width: calc(100% - 43px);
   margin: 0 auto;
@@ -40,14 +194,4 @@ html {
   padding: 0 19px 0 7px;
   margin-right: -5px;
   font: 400 13.3333px Arial;
-}
-.chat {
-  width: 80%;
-  height: 100%;
-  display: inline-block;
-  padding-left: 20%;
-}
-.chat__top {
-  height: 60px;
-  box-shadow: #b5c0c6 -2px 2px 4px 0px;
 }

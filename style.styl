@@ -1,39 +1,74 @@
+torea-bay = #353b7d
+heather = #B5C0C6
+waikawa-grey = #636791
+
 html
 	height: 100%
 	
-.contacts
-	width: 22%
+body
 	height: 100%
-	background-color: #353B7D
-	position: absolute
+
+.sticky__top
+	position:fixed
+	top: 0px
+	width: 100%
+
+.left-bar
+	lost-column: 3/12 0 0
+	height: 100%
+	background-color: torea-bay
+	
+.contacts
+	padding-top: 60px
 	&__top
 		height: 60px
 		box-shadow: black -2px 2px 4px 0px
+		z-index: 10
+		lost-column: 3/12 0 0
+		background-color: torea-bay
 		
-.contacts-search
-	text-align: center
-	padding-top: 14px
-	&__input
-		background-color: rgba(0, 0, 0, 0)
-		border: none
-		color: #b5c0c6
-		width: calc(80% - 10px)
-		padding-right: 10px
-		&:focus
-			outline: none
-			color: #B5C0C6
-		&::-webkit-input-placeholder
-			color: #b5c0c6
-	&__box
-		width: calc(100% - 43px)
-		margin: 0 auto
-		background-color: #636791
-		padding: 5px 0
-	&__search-icon
-		color: #B5C0C6
-		padding: 0 19px 0 7px
-		margin-right: -5px
-		font: 400 13.3333px Arial
+.contacts-chat-room
+	padding: 15px 0	
+	height: 60px
+	position: relative
+	color: waikawa-grey
+	&--active
+		background-color: #292F66
+	&__title
+		color: white
+		position: absolute
+		top: 23px
+	&__time
+		position: absolute
+		top: 23px
+		right: 37px
+	&__excerpt
+		position:absolute
+		top: 47px
+	&__profile-pictures
+		lost-column: 5/20
+		height: 60px
+	&__profile-pictures-single
+		width: 45px
+		height: 45px
+		background-color: blue
+		border-radius: 40px
+		position: absolute
+		top: 22px
+		left: 30px
+		background-image: url('https://avatars2.githubusercontent.com/u/8213031?s=460&v=4')
+		background-size: cover
+		&--multiple-first
+			background-color: pink
+			top: 20px
+			left: 23px
+			z-index: 3
+			background-image: url('https://avatars0.githubusercontent.com/u/32596568?s=200&v=4')
+		&--multiple-second
+			top: 27px
+			left: 37px
+	&__meta
+		lost-column: 15/20
 
 .chat
 	width: 80%;
@@ -42,4 +77,30 @@ html
 	padding-left: 20%;
 	&__top
 		height: 60px;
-		box-shadow: #B5C0C6 -2px 2px 4px 0px;
+		box-shadow: #B5C0C6 0px 2px 4px 0px;
+		lost-column: 9/12
+
+.contacts-search
+	text-align: center
+	padding-top: 14px
+	&__input
+		background-color: rgba(0, 0, 0, 0)
+		border: none
+		color: heather
+		width: calc(80% - 10px)
+		padding-right: 10px
+		&:focus
+			outline: none
+			color: heather
+		&::placeholder
+			color: heather
+	&__box
+		width: calc(100% - 43px)
+		margin: 0 auto
+		background-color: waikawa-grey
+		padding: 5px 0
+	&__search-icon
+		color: heather
+		padding: 0 19px 0 7px
+		margin-right: -5px
+		font: 400 13.3333px Arial
