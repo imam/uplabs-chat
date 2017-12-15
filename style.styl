@@ -12,6 +12,7 @@ body
 	position:fixed
 	top: 0px
 	width: 100%
+	z-index: 9999
 
 .left-bar
 	lost-column: 3/12 0 0
@@ -19,7 +20,9 @@ body
 	background-color: torea-bay
 	
 .contacts
-	padding-top: 60px
+	margin-top: 60px
+	height: calc(100% - 60px)
+	overflow-y: scroll
 	&__top
 		height: 60px
 		box-shadow: black -2px 2px 4px 0px
@@ -32,6 +35,9 @@ body
 	height: 60px
 	position: relative
 	color: waikawa-grey
+	&:hover
+		background-color: lighten(torea-bay, 3%)
+		cursor: pointer
 	&--active
 		background-color: #292F66
 	&__title
@@ -78,7 +84,7 @@ body
 	&__top
 		height: 60px;
 		box-shadow: #B5C0C6 0px 2px 4px 0px;
-		lost-column: 9/12
+		lost-column: 9/12 0 0
 
 .contacts-search
 	text-align: center
