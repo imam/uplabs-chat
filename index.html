@@ -11,8 +11,11 @@
 	<script>
 		$(document).ready(function(){
 			$('.contacts').perfectScrollbar()
+			$('.chat-body').perfectScrollbar()
 		})
 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
 </head>
 <body>
 	<div class="sticky__top">
@@ -28,6 +31,11 @@
 		</div>
 		<div class="chat-top" style="">
 			<div class="chat-top__title">Corey and Frank</div>
+			<div class="chat-top__tools">
+				<i class="fas fa-bell-slash"></i>
+				<i class="far fa-clock"></i>
+				<i class="fas fa-trash"></i>
+			</div>
 		</div>
 	</div>
 	<div class="left-bar">
@@ -37,9 +45,9 @@
 					<div class="contacts-chat-room__profile-pictures-single"></div>	
 				</div>
 				<div class="contacts-chat-room__meta">
-					<div class="contacts-chat-room__title">Corey and Frank</div>
+					<div class="contacts-chat-room__title">Corey and Frank <span class="online"></span></div>
 					<div class="contacts-chat-room__time">2:49 pm</div>
-					<div class="contacts-chat-room__excerpt">Kepoo</div>
+					<div class="contacts-chat-room__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, in accusamus necessitatibus, libero enim asperiores maxime ab adipisci nemo quaerat modi, deleniti a non assumenda consequatur. Esse eos beatae debitis.</div>
 				</div>
 			</div>
 			<div class="contacts-chat-room">
@@ -50,6 +58,7 @@
 					<div class="contacts-chat-room__title">Corey and Frank</div>
 					<div class="contacts-chat-room__time">2:49 pm</div>
 					<div class="contacts-chat-room__excerpt">Kepoo</div>
+					<div class="contacts-chat-room__silent"><i class="fas fa-bell-slash"></i></div>
 				</div>
 			</div>
 			<div class="contacts-chat-room">
@@ -116,7 +125,83 @@
 	    </div>
     </div>
     
-
+	<div class="chat-body">
+		<div class="chat-container">
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio harum magnam, unde hic fuga inventore perspiciatis commodi tempore quam sed eos eius ut repellat impedit iste reprehenderit eaque numquam delectus!</div>
+				</div>
+			</div>
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio harum magnam, unde hic fuga inventore perspiciatis commodi tempore quam sed eos eius ut repellat impedit iste reprehenderit eaque numquam delectus!</div>
+				</div>
+			</div>
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Tempor est ut sed dolore sint proident deserunt esse commodo incididunt laboris consectetur aliqua sint consectetur ex laborum est esse sint in ea dolore proident eu id sunt eu anim fugiat cillum eu. Reprehenderit in et occaecat aliquip eiusmod exercitation elit ea est duis minim consequat cupidatat voluptate in eiusmod dolor dolore id officia culpa in excepteur deserunt occaecat esse reprehenderit voluptate laboris culpa.</div>
+				</div>
+			</div>
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Tempor est ut sed dolore sint proident deserunt esse commodo incididunt laboris consectetur aliqua sint consectetur ex laborum est esse sint in ea dolore proident eu id sunt eu anim fugiat cillum eu. Reprehenderit in et occaecat aliquip eiusmod exercitation elit ea est duis minim consequat cupidatat voluptate in eiusmod dolor dolore id officia culpa in excepteur deserunt occaecat esse reprehenderit voluptate laboris culpa.</div>
+				</div>
+			</div>
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Tempor est ut sed dolore sint proident deserunt esse commodo incididunt laboris consectetur aliqua sint consectetur ex laborum est esse sint in ea dolore proident eu id sunt eu anim fugiat cillum eu. Reprehenderit in et occaecat aliquip eiusmod exercitation elit ea est duis minim consequat cupidatat voluptate in eiusmod dolor dolore id officia culpa in excepteur deserunt occaecat esse reprehenderit voluptate laboris culpa.</div>
+				</div>
+			</div>
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Tempor est ut sed dolore sint proident deserunt esse commodo incididunt laboris consectetur aliqua sint consectetur ex laborum est esse sint in ea dolore proident eu id sunt eu anim fugiat cillum eu. Reprehenderit in et occaecat aliquip eiusmod exercitation elit ea est duis minim consequat cupidatat voluptate in eiusmod dolor dolore id officia culpa in excepteur deserunt occaecat esse reprehenderit voluptate laboris culpa.</div>
+				</div>
+			</div>
+			<div class="chat-single">
+				<div class="chat-single__time">14:50 pm</div>
+				<div class="chat-single__profile-picture-container">
+					<div class="chat-single__profile-picture"></div>
+				</div>
+				<div class="chat-single__name-message-container">
+					<div class="chat-single__name">Imam Assidiqqi</div>
+					<div class="chat-single__message">Lorem ipsum et nostrud sit duis ex.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sticky-bottom">
+		<div class="contacts__bottom"></div>
+	</div>
 	
 </body>
 </html>
