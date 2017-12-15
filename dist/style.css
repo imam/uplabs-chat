@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+}
+.contacts {
+  width: 22%;
+  height: 100%;
+  background-color: #353b7d;
+  position: absolute;
+}
+.contacts__top {
+  height: 60px;
+  box-shadow: #000 -2px 2px 4px 0px;
+}
+.contacts-search {
+  text-align: center;
+  padding-top: 14px;
+}
+.contacts-search__input {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: #b5c0c6;
+  width: calc(80% - 10px);
+  padding-right: 10px;
+}
+.contacts-search__input:focus {
+  outline: none;
+  color: #b5c0c6;
+}
+.contacts-search__input::-webkit-input-placeholder {
+  color: #b5c0c6;
+}
+.contacts-search__box {
+  width: calc(100% - 43px);
+  margin: 0 auto;
+  background-color: #636791;
+  padding: 5px 0;
+}
+.contacts-search__search-icon {
+  color: #b5c0c6;
+  padding: 0 19px 0 7px;
+  margin-right: -5px;
+  font: 400 13.3333px Arial;
+}
+.chat {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  padding-left: 20%;
+}
+.chat__top {
+  height: 60px;
+  box-shadow: #b5c0c6 -2px 2px 4px 0px;
+}
