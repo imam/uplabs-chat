@@ -4,7 +4,15 @@
 	<title>Chat</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
 	<link rel="stylesheet" href="dist/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/css/perfect-scrollbar.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/js/perfect-scrollbar.jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.contacts').perfectScrollbar()
+		})
+	</script>
 </head>
 <body>
 	<div class="sticky__top">
@@ -18,10 +26,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="chat__top" style=""></div>
+		<div class="chat-top" style="">
+			<div class="chat-top__title">Corey and Frank</div>
+		</div>
 	</div>
 	<div class="left-bar">
-		<div class="contacts" >
+		<div class="contacts " >
 			<div class="contacts-chat-room contacts-chat-room--active">
 				<div class="contacts-chat-room__profile-pictures">
 					<div class="contacts-chat-room__profile-pictures-single"></div>	
@@ -46,6 +56,16 @@
 				<div class="contacts-chat-room__profile-pictures">
 					<div class="contacts-chat-room__profile-pictures-single contacts-chat-room__profile-pictures-single--multiple-first"></div>	
 					<div class="contacts-chat-room__profile-pictures-single contacts-chat-room__profile-pictures-single--multiple-second"></div>
+				</div>
+				<div class="contacts-chat-room__meta">
+					<div class="contacts-chat-room__title">Corey and Frank</div>
+					<div class="contacts-chat-room__time">2:49 pm</div>
+					<div class="contacts-chat-room__excerpt">Kepoo</div>
+				</div>
+			</div>
+			<div class="contacts-chat-room">
+				<div class="contacts-chat-room__profile-pictures">
+					<div class="contacts-chat-room__profile-pictures-single"></div>	
 				</div>
 				<div class="contacts-chat-room__meta">
 					<div class="contacts-chat-room__title">Corey and Frank</div>
