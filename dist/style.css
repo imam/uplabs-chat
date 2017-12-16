@@ -30,7 +30,7 @@ body {
 .contacts {
   margin-top: 80px;
   height: calc(100% - 80px - 90px);
-  overflow-y: hidden;
+  overflow-y: scroll;
   position: relative;
 }
 .contacts__top {
@@ -78,7 +78,7 @@ body {
   color: #636791;
 }
 .contacts-chat-room:hover {
-  background-color: #383e84;
+  background-color: #3f4694;
   cursor: pointer;
 }
 .contacts-chat-room--active {

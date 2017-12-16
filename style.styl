@@ -26,7 +26,7 @@ body
 .contacts
 	margin-top: fixed-top-size
 	height: "calc(100% - %s - %s)" % (fixed-top-size fixed-bottom-size)
-	overflow-y: hidden
+	overflow-y: scroll
 	position: relative
 	&__top
 		height: fixed-top-size
@@ -47,7 +47,7 @@ body
 	position: relative
 	color: waikawa-grey
 	&:hover
-		background-color: lighten(torea-bay, 3%)
+		background-color: lighten(torea-bay, 10%)
 		cursor: pointer
 	&--active
 		background-color: #292F66
